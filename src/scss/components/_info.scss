@@ -1,0 +1,58 @@
+.info {
+  color: $black;
+
+  &__title {
+    font-size: 30px;
+    line-height: 46px;
+    direction: rtl;
+    text-align: center;
+    margin-bottom: 42px;
+  }
+
+  &__box {
+    display: flex;
+    margin: 0 -24px;
+  }
+
+  &__card {
+    width: 25%;
+    margin: 0 12px;
+    border-radius: 24px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.09);
+    padding: 16px 13px;
+  }
+
+  &__card-img {
+    margin-bottom: 30px;
+  }
+
+  &__card-title {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  &__card-desc {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  &__card-link {
+    color: #004990;
+    display: inline-flex;
+    margin: 0 auto;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  &__card-icon {
+    margin-right: 12px;
+  }
+
+  &__card-btn {
+    text-align: center;
+  }
+}

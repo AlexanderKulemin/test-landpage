@@ -1,0 +1,16 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -18px;
+  margin-right: -18px;
+
+  @media (min-width: $screen-md-min) {
+    margin-left: -13px;
+    margin-right: -13px;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    margin-left: -18px;
+    margin-right: -18px;
+  }
+}

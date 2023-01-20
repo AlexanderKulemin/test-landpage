@@ -1,0 +1,46 @@
+{% macro icon(name, cssClass) %}
+	<div class="{{cssClass}}">
+		{% if name == 'logo' %}
+			{% include "../../svg-icons/logo.svg" %}
+		{% endif %}
+    {% if name == 'search' %}
+			{% include "../../svg-icons/search.svg" %}
+		{% endif %}
+    {% if name == 'bell' %}
+			{% include "../../svg-icons/bell.svg" %}
+		{% endif %}
+    {% if name == 'menu' %}
+			{% include "../../svg-icons/menu.svg" %}
+		{% endif %}
+    {% if name == 'select' %}
+			{% include "../../svg-icons/select.svg" %}
+		{% endif %}
+    {% if name == 'arrow' %}
+			{% include "../../svg-icons/arrow.svg" %}
+		{% endif %}
+    {% if name == 'youtube' %}
+			{% include "../../svg-icons/youtube.svg" %}
+		{% endif %}
+    {% if name == 'instagram' %}
+			{% include "../../svg-icons/instagram.svg" %}
+		{% endif %}
+    {% if name == 'twitter' %}
+			{% include "../../svg-icons/twitter.svg" %}
+		{% endif %}
+    {% if name == 'facebook' %}
+			{% include "../../svg-icons/facebook.svg" %}
+		{% endif %}
+    {% if name == 'lines' %}
+			{% include "../../svg-icons/lines.svg" %}
+		{% endif %}
+    {% if name == 'pulse' %}
+			{% include "../../svg-icons/pulse.svg" %}
+		{% endif %}
+    {% if name == 'human' %}
+			{% include "../../svg-icons/human.svg" %}
+		{% endif %}
+    {% if name == 'eye' %}
+			{% include "../../svg-icons/eye.svg" %}
+		{% endif %}
+	</div>
+{% endmacro %}

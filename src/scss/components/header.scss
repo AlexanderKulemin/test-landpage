@@ -1,0 +1,103 @@
+.header {
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  padding-top: 27px;
+  z-index: 1;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  &__button {
+    background-color: $red;
+    color: #fff;
+    padding: 0 43px;
+    font-size: 18px;
+    font-weight: 700;
+    height: 48px;
+    border-radius: 50px;
+    border: none;
+    margin-right: 24px;
+  }
+
+  &__lang-wrap {
+    display: flex;
+  }
+
+  &__lang-icon {
+    margin-right: 5px;
+  }
+
+  &__lang {
+    background-color: $transparent;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  &__buttons {
+    display: flex;
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 0 15px;
+    margin: 0 20px 0 8px;
+  }
+
+  &__search {
+    background-color: $transparent;
+    border: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  &__notification {
+    background-color: $transparent;
+    border: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  &__contacts {
+    font-size: 20px;
+  }
+
+  &__menu {
+    background-color: #fff;
+    border-radius: 50px;
+    height: 48px;
+    padding: 0 24px;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__menu-icon {
+    margin-left: 10px;
+  }
+
+  &__logo {
+    margin-left: 75px;
+  }
+
+  &__phone {
+    margin-right: 10px;
+  }
+}

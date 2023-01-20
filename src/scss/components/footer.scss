@@ -1,0 +1,146 @@
+.footer {
+  direction: rtl;
+  background-color: rgba(36, 60, 204, 0.05);
+  padding-top: 56px;
+
+  &__container {
+    display: flex;
+    padding: 0 0 50px;
+  }
+
+  &__title {
+    font-size: 20px;
+
+    &:after {
+      content: '';
+      width: 22px;
+      height: 1px;
+      background-color: $blue;
+      display: block;
+      margin: 16px 0;
+    }
+
+    &--last {
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  &__row {
+    width: 218px;
+
+    &:last-child {
+      margin-right: 107px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__list-item {
+    margin-bottom: 16px;
+  }
+
+  &__list-link {
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+    text-decoration: none;
+  }
+
+  &__phone {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42px;
+    color: $blue;
+    margin-bottom: 24px;
+    margin-top: -8px;
+  }
+
+  &__socials {
+    display: flex;
+  }
+
+  &__socials-item {
+    margin: 0 0 0 12px;
+  }
+
+  &__desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    margin: 15px 0 3px;
+  }
+
+  &__btn {
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: $red;
+    height: 48px;
+    box-shadow: 0px 4px 14px rgba(241, 91, 98, 0.4);
+    margin:15px 0 18px;
+    padding: 0 72px;
+    border: none;
+    border-radius: 40px;
+  }
+
+  &__bottom {
+    background-color: #EDEEF8;
+    display: flex;
+    padding: 15px 0 32px;
+  }
+
+  &__bottom-container {
+    display: flex;
+  }
+
+  &__bottom-txt {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+    margin: 16px 0; 
+  }
+
+  &__bottom-box {
+    max-width: 683px;
+  }
+
+  &__copyright {
+    font-size: 14px;
+    font-weight: 400;
+    border-left: 1px solid #000;
+    padding-left: 8px;
+    margin-left: 8px;
+    direction: ltr;
+  }
+
+  &__bottom-info {
+    margin-right: 224px;
+    text-align: center;
+  }
+
+  &__bottom-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  &__bottom-list {
+    display: flex;
+  }
+
+  &__bottom-item-txt {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &__bottom-item {
+    text-align: center;
+  }
+}
+
+

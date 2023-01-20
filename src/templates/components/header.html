@@ -1,0 +1,42 @@
+{% from "templates/components/icons.html" import icon %} {% from
+"templates/components/mobile-menu.html" import mobileMenu %} {% macro
+header(color, activeItem=0) %}
+<header class="header ">
+  <div class="container header__container">
+    <button class="button header__button">לתרומה</button>
+    
+    <div class="header__lang-wrap">
+      {{icon(name="select", cssClass="header__lang-icon")}}
+      <select class="header__lang">
+        <option value="he">HE</option>
+        <option value="eng">ENG</option>
+      </select>
+    </div>
+    
+    <div class="header__buttons">
+      <button class="header__search">
+        {{icon(name="search")}}
+        חיפוש
+      </button>
+      <button class="header__notification">
+        {{icon(name="bell")}}
+        מה חדש
+      </button>
+    </div>
+    
+    <div class="header__contacts">
+      <span class="header__phone">1800-599-995</span> צרו קשר
+    </div>
+    <div class="header__right">
+      <button class="header__menu">
+        תפריט
+        {{icon(name="menu", cssClass="header__menu-icon")}}
+      </button>
+
+      <div class="header__logo">
+        {{icon(name="logo")}}
+      </div>
+    </div>
+  </div>
+</header>
+{{mobileMenu()}} {% endmacro %}

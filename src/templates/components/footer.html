@@ -1,0 +1,104 @@
+{% from "./icons.html" import icon %} 
+
+{% macro footer() %}
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__row">
+      <h4 class="footer__title">מחלות סרטן</h4>
+      <ul class="footer__list">
+        <li class="footer__list-item"><a href="#" class="footer__list-link">סרטן השד</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__list-link">סרטן המעי הגס</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__list-link">סרטן הערמונית</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__list-link">ילדים ומתבגרים חולי סרטן</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__list-link">גידולי מוח</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__row">
+      <h4 class="footer__title">מידע לחולים</h4>
+      <ul class="footer__list">
+        <li class="footer__list-item"><a href="#" class="footer__list-link">מוקדי מידע ותמיכה</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__list-link">תרופות וטיפולים</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__list-link">קבוצות ומרכזי תמיכה</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__list-link">מחקרים קלינים בישראל</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__list-link">התמודדות ושיקום</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__row">
+      <h4 class="footer__title">גורמי סיכון</h4>
+      <ul class="footer__list">
+        <li class="footer__list-item"><a href="#" class="footer__list-link">המאבק בעישון</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__list-link">חכם בשמש</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__list-link">תזונה ומשקל גוף תקין</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__list-link">פעילות גופנית</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__list-link">כללים לחיים בריאים</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__row">
+      <h4 class="footer__title">יצירת קשר</h4>
+      <ul class="footer__list">
+        <li class="footer__list-item"><a href="#" class="footer__list-link">לפניה מקוונת</a></li>
+      </ul>
+      <div class="footer__phone">1-800-599-995</div>
+
+      <h4 class="footer__title">עקבו אחרינו</h4>
+      <div class="footer__socials">
+        <a href="#" class="footer__socials-item">{{icon(name="youtube")}}</a>
+        <a href="#" class="footer__socials-item">{{icon(name="twitter")}}</a>
+        <a href="#" class="footer__socials-item">{{icon(name="instagram")}}</a>
+        <a href="#" class="footer__socials-item">{{icon(name="facebook")}}</a>
+      </div>
+    </div> 
+
+    <div class="footer__row">
+      <h4 class="footer__title footer__title--last">התרומה שלכם חשובה להם</h4>
+      <div class="footer__desc">בעזרת תרומתכם, נוכל להמשיך לחקור, לתקדם, להילחם ולרפא</div>
+      <button class="footer__btn">לתרומה</button>
+
+      <img src="./images/logos.png" alt="logos">
+    </div>
+
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container footer__bottom-container">
+      <div class="footer__bottom-box">
+        <div class="footer__bottom-txt">
+          ינבל ,ןטרס ילוחל עדימ ,ןטרס תולחמ לע ,םדקומ ןוחבאו ןטרס תעינמ יכרד לע ןימאו ןכדועמ עדימ אוצמל ןתינ ןטרסב המחלמל הדוגאה רתאב.דועו םייעוצקמ םימורופ ,ןטרס ילוח תויוכז ,הכימת יזכרמ ,םילופיטו תופורת ,תודדומתה יכרד לע ,םימילחמלו םתחפשמ
+  .םוחת לכב החמומ םע תוצעייתהל ףילחת וא תיעוצקמ תעד תווח ,תיאופר הצע רדגב םניאו דבלב עדימ קפסל ודעונ רתאב םיעיפומה םינכתה
+  .תויטרפה תוינידמבו רתאב שומישה יאנתב ןייעל אנ
+        </div>
+        <div>
+          <span class="footer__copyright">© כל הזכויות שמורות לאגודה למלחמה בסרטן בישראל 2022</span>
+          <img src="./images/purple.svg" alt="purple">
+        </div>
+      </div>
+
+      <div class="footer__bottom-info">
+        <div class="footer__bottom-title">ךרד לכב ןטרסב םיקבאנ</div>
+        <div class="footer__bottom-list">
+          <div class="footer__bottom-item">
+            {{icon(name="eye")}}
+            <div class="footer__bottom-item-txt">רקחמ</div>
+          </div>
+          <div class="footer__bottom-item">
+            {{icon(name="pulse")}}
+            <div class="footer__bottom-item-txt">מניעה ואבחון</div>
+          </div>
+          <div class="footer__bottom-item">
+            {{icon(name="human")}}
+            <div class="footer__bottom-item-txt">שיקום</div>
+          </div>
+          <div class="footer__bottom-item">
+            {{icon(name="lines")}}
+            <div class="footer__bottom-item-txt">מידע מקצועי</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+{% include "../partials/modals.html" %} {% endmacro %}

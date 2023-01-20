@@ -1,0 +1,153 @@
+{% from "../components/icons.html" import icon %}
+
+<!-- Modal Get started -->
+<div class="modal modal--get-started">
+  <div class="modal__body">
+    <button class="modal__close js-modal-close">
+      {{ icon(name="cross", cssClass="modal__close-icon") }}
+    </button>
+    <div class="modal__content">
+      <h2 class="modal__header">Get started with Zirtue</h2>
+      <p class="modal__text">
+        We’ll text you the link to download the Zirtue app.
+      </p>
+      <form class="get-app-form get-app-form--modal modal__get-app-form">
+        <input
+          type="tel"
+          class="get-app-form__input"
+          placeholder="Your phone number"
+        />
+        <button
+          id="phone-cta-navbar"
+          class="button button--primary-green get-app-form__button"
+          type="submit"
+        >
+          Text me the app
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Message sent -->
+<div class="modal modal--message-sent">
+  <div class="modal__body">
+    <button class="modal__close js-modal-close">
+      {{ icon(name="cross", cssClass="modal__close-icon") }}
+    </button>
+    <div class="modal__content">
+      <h2 class="modal__header">Text message sent!</h2>
+      <p class="modal__text">
+        We have sent you the link to download the Zirtue app.
+      </p>
+      <button class="button button--primary-green modal__button js-modal-close">
+        Done
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Message error -->
+<div class="modal modal--message-error">
+  <div class="modal__body">
+    <button class="modal__close js-modal-close">
+      {{ icon(name="cross", cssClass="modal__close-icon") }}
+    </button>
+    <div class="modal__content">
+      <h2 class="modal__header">Oops! Something went wrong</h2>
+      <p class="modal__text">Please enter a valid phone number.</p>
+      <button
+        class="button button--primary-green modal__button js-return-button"
+        data-return-to-modal="false"
+      >
+        Try again
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Get started vip -->
+<div class="modal modal--get-started-vip">
+  <div class="modal__body">
+    <button class="modal__close js-modal-close">
+      {{ icon(name="cross", cssClass="modal__close-icon") }}
+    </button>
+    <div class="modal__content">
+      <div class="modal__col modal__col--image">
+        <picture>
+          <source
+            srcset="
+              /images/modals/get-started-vip@1x.webp 1x,
+              /images/modals/get-started-vip@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img
+            src="/images/modals/get-started-vip@1x.png"
+            srcset="/images/modals/get-started-vip@2x.png 2x"
+            alt=""
+            class="modal__image"
+          />
+        </picture>
+      </div>
+      <div class="modal__col modal__col--content">
+        <h2 class="modal__header">Get started with Zirtue today</h2>
+        <p class="modal__text">
+          Direct Bill Pay by Zirtue allows you to get your bills paid with the
+          help of your friends, family, or trusted relationships.
+        </p>
+        <form
+          class="get-app-form get-app-form--vertical get-app-form--vip get-app-form--modal modal__get-app-form"
+        >
+          <input
+            type="tel"
+            class="get-app-form__input"
+            placeholder="Your phone number"
+          />
+          <button
+            id="phone-cta-navbar1"
+            class="button button--primary-dark-blue get-app-form__button"
+            type="submit"
+          >
+            Text me the App
+          </button>
+        </form>
+        <p class="modal__note">
+          By tapping here, you're giving us permission to send you an SMS/text
+          message with a link to download Zirtue.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Email success -->
+<div class="modal modal--email-success">
+  <div class="modal__body">
+    <button class="modal__close js-modal-close">
+      {{ icon(name="cross", cssClass="modal__close-icon") }}
+    </button>
+    <div class="modal__content">
+      <h2 class="modal__header">Thank you for signing up!</h2>
+      <p class="modal__text">
+        We will reach out to you with more information in the near future!
+      </p>
+      <button class="button button--primary-green modal__button js-modal-close">
+        Close
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Message error -->
+<div class="modal modal--email-error">
+  <div class="modal__body">
+    <button class="modal__close js-modal-close">
+      {{ icon(name="cross", cssClass="modal__close-icon") }}
+    </button>
+    <div class="modal__content">
+      <h2 class="modal__header">Oops! Something went wrong</h2>
+      <p class="modal__text">Please enter a valid email address.</p>
+    </div>
+  </div>
+</div>

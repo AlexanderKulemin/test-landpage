@@ -1,0 +1,56 @@
+{% from "templates/components/icons.html" import icon %}
+
+{% macro mobileMenu() %}
+  <div class="mobile-menu">
+    <div class="mobile-menu__top-row">
+      <!-- Logo -->
+			<a href="./" class="logo logo--mobile-menu">
+				{{icon(name="logo-main", cssClass="logo__icon")}}
+			</a>
+      <button class="mobile-menu__close">
+        {{icon(name="cross", cssClass="mobile-menu__close-icon")}}
+      </button>
+    </div>
+    <div class="mobile-menu__nav">
+      <!-- Nav block -->
+      <div class="mobile-menu__nav-block">
+        <h6 class="mobile-menu__nav-title">Company</h6>
+        <ul class="mobile-menu__nav-list">
+          <li class="mobile-menu__nav-item">
+            <a href="/how-it-works" class="mobile-menu__nav-link">How it works</a>
+          </li>
+          <li class="mobile-menu__nav-item">
+            <a href="/about-us" class="mobile-menu__nav-link">About us</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Nav block -->
+      <div class="mobile-menu__nav-block">
+        <h6 class="mobile-menu__nav-title">Help</h6>
+        <ul class="mobile-menu__nav-list">
+          <li class="mobile-menu__nav-item">
+            <a href="https://help.zirtue.com/" class="mobile-menu__nav-link">Help Center</a>
+          </li>
+          <li class="mobile-menu__nav-item">
+            <a href="/contact-us" class="mobile-menu__nav-link">Contact us</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Nav block -->
+      <div class="mobile-menu__nav-block">
+        <h6 class="mobile-menu__nav-title">Partners</h6>
+        <ul class="mobile-menu__nav-list">
+          <li class="mobile-menu__nav-item">
+            <a href="/for-businesses" class="mobile-menu__nav-link">For businesses</a>
+          </li>
+          <li class="mobile-menu__nav-item">
+            <a href="https://partners.zirtue.com/" class="mobile-menu__nav-link">Log in</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="mobile-menu__bottom-row">
+      <button class="button button--primary-green mobile-menu__app-button js-get-started">Get the app</button>
+    </div>
+  </div>	
+{% endmacro %}

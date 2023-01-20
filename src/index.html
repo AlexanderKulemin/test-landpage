@@ -1,0 +1,171 @@
+{% extends "./templates/layout/_base.html" %}
+{% from "templates/components/icons.html" import icon %}
+
+{% block page_title %}
+	Lending
+{% endblock %}
+{% set description="" %}
+
+{% block page_content %}
+	<!-- Hero -->
+  {% set helps = [
+    { title: "הסניף הקרוב"}, 
+    { title: "אבחון מוקדם"}, 
+    {title: "מניעה 
+    וגורמי סיכון"},
+    {title: "מלונית לחולים"},
+    {title: "התייעצות 
+    עם מומחים"},
+    {title: "שיקום ותמיכה"},
+    {title: "זכויות החולה"},
+    {title: "ןטרס תולחמ"}
+  
+  ]%}
+  {% set info = [
+    {title: "והמ דשה ןטרס", desc: "תופתתשהב דשה ןטרס לע ףיקמ עדימםוחתב םיחמומה בטימ"},
+    {title: "והמ דשה ןטרס", desc: "תופתתשהב דשה ןטרס לע ףיקמ עדימםוחתב םיחמומה בטימ"},
+    {title: "והמ דשה ןטרס", desc: "תופתתשהב דשה ןטרס לע ףיקמ עדימםוחתב םיחמומה בטימ"},
+    {title: "והמ דשה ןטרס", desc: "תופתתשהב דשה ןטרס לע ףיקמ עדימםוחתב םיחמומה בטימ"}
+  ]%}
+	<section class="section hero"> 
+    <div class="container">
+      <div class="hero__subtitle">ךרד לכב ןטרסב םיקבאנ</div>
+      <h1 class="hero__title">שבוע המודעות למניעת סרטן העור ולגילוי מוקדם</h1>
+    </div>
+
+    <div class="search">
+      <input type="text" class="search__input" placeholder="חיפוש... ">
+      <button class="search__btn">חיפוש</button>
+    </div>
+	</section>
+	
+  <section class="help">
+    <div class="container">
+      <h3 class="title">איך נוכל לסייע לך?</h3>
+      <div class="help__box">
+        {% for item in helps %}
+          <div class="help__card help__card--{{loop.index}}">
+            <div class="help__card-img">
+              <img class="help__card-icon" src="./images/help-{{loop.index}}.svg" alt="icon">
+            </div>
+            
+            <h6 class="help__card-title">{{item.title}}</h6>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="info">
+    <div class="container">
+      <h3 class="title">כדאי לדעת</h3>
+      <div class="info__box">
+        {% for item in info %}
+        
+          <div class="info__card">
+            <div class="info__card-img">
+              <img src="./images/info-{{loop.index}}.png" alt="image">
+            </div>
+            <h4 class="info__card-title">{{item.title}}</h4>
+            <p class="info__card-desc">{{item.desc}}</p>
+            <div class="info__card-btn">
+              <a href="#" class="info__card-link">{{icon(name="arrow", cssClass="info__card-icon")}}למידע נוסף</a>
+            </div>
+          </div>
+        
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="bubbles">
+   
+      <div class="subtitle">?ךתמורת תוכזב הנשה השענ המ</div>
+      <h3 class="title rtl">םכתרזעב לועפל ךישמנ</h3>
+      
+      <div class="bubbles__box">
+        <div class="bubbles__item bubbles__item--01">
+          <span class="bubbles__item-num">800</span>     
+          <div class="bubbles__item-title">אלף חוברות</div>
+          <div class="bubbles__item-txt">לרופאים וחוקרים</div>
+        </div>
+
+        <div class="bubbles__item bubbles__item--02">
+          <span class="bubbles__item-num">672</span>     
+          <div class="bubbles__item-title">אלף חוברות</div>
+          <div class="bubbles__item-txt">לרופאים וחוקרים</div>
+        </div>
+
+        <div class="bubbles__item bubbles__item--03">
+          <span class="bubbles__item-num">400+</span>     
+          <div class="bubbles__item-title">מענקי מחקר</div>
+          <div class="bubbles__item-txt">לרופאים וחוקרים</div>
+        </div>
+
+        <div class="bubbles__item bubbles__item--04">
+          <span class="bubbles__item-num">672</span>     
+          <div class="bubbles__item-title">מענקי מחקר</div>
+          <div class="bubbles__item-txt">לרופאים וחוקרים</div>
+        </div>
+
+        <div class="bubbles__item bubbles__item--05">
+          <span class="bubbles__item-num">780+</span>     
+          <div class="bubbles__item-title">מענקי מחקר</div>
+          <div class="bubbles__item-txt">לרופאים וחוקרים</div>
+        </div>
+      </div>
+      <button class="bubbles__btn">בזכות תרומתי</button>
+    
+  </section>
+
+  <section class="family">
+    <div class="container">
+      <div class="subtitle rtl">ךרדה לכ ךרואל </div>
+      <h3 class="title family__title rtl">החפשמהמ קלח תויהל ואוב</h3>
+
+      <picture>
+        <source
+          srcset="
+          ./images/family.png 1x,
+          ./images/family@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          src="./images/family.png"
+          srcset="./images/family@2x.png 2x"
+          alt=""
+          class="family__image"
+        />
+      </picture>
+      <div class="family__txt">.ןטרס ילוחל הווקת איבהל לכונש השוריפ ךלש הנתמה
+        .םעפ יאמ רתוי השקו הבוט ,המכח הרוצב ןטרסב םימחלנ ונחנא .ךתכימת לע הדות דחיב 
+      </div>
+      <div class="family__controls">
+        <button class="family__btn family__btn--outline">להתנדבות</button>
+        <button class="family__btn">לתרומה</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="video">
+    <div class="container">
+      <div class="title">סרטון הסבר</div>
+
+      <video src="#" poster="./images/video.png" class="video__frame"></video>
+    </div>
+  </section>
+
+  <div class="form">
+    <div class="container form__container">
+      <div class="form__box">
+        <div class="form__txt">םיניינעב ראשהל</div>
+        <div class="form__title rtl">םינוכדע תלבקל רטלזוינל ומשריה</div>
+      </div>
+
+      <input type="text" placeholder="אלמ םש" class="form__input">
+      <input type="text" placeholder="אימייל" class="form__input">
+      <button class="form__btn">להרשמה</button>
+    </div>
+  </div>
+{% endblock %}

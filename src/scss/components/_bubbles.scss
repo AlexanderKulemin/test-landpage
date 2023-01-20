@@ -1,0 +1,95 @@
+.bubbles {
+  background: url('../images/bg-bubbles.png');
+  background-position: top center;
+  background-size: cover;
+  height: 72.1vw;
+  text-align: center;
+  color: $black;
+  padding-top: 131px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  margin-bottom: -123px;
+
+  &__box {
+    display: flex;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: 300;
+    color: #004990;
+    position: absolute;
+
+    &--01 {
+      width: 258px;
+      height: 258px;
+      background-color: #144A92;
+      color: #fff;
+      top: 240px;
+      left: 7%;
+    }
+
+    &--02 {
+      width: 262px;
+      height: 262px;
+      background-color: #E8EDF4;
+      top: 472px;
+      left: 25.5%;
+    }
+
+    &--03 {
+      width: 222px;
+      height: 222px;
+      background-color: #5B80B3;
+      color: #fff;
+      top: 275px;
+      left: 43.5%;
+    }
+
+    &--04 {
+      width: 239px;
+      height: 239px;
+      background-color: #D0DBE9;
+      top: 341px;
+      right: 21%;
+    }
+
+    &--05 {
+      width: 268px;
+      height: 268px;
+      background-color: #E8EDF4;
+      top: 221px;
+      right: -5%;
+    }
+  }
+
+  &__item-num {
+    font-size: 68px;
+  }
+
+  &__item-title {
+    font-size: 33px;
+  }
+
+  &__item-txt {
+    font-size: 21px;
+  }
+
+  &__btn {
+    color: #004990;
+    border: 2px solid #004990;
+    height: 48px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: $transparent;
+    border-radius: 40px;
+    padding: 0 43px;
+    cursor: pointer;
+    margin-top: 512px;
+  }
+}

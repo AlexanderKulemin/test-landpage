@@ -1,0 +1,17 @@
+.video {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin: 0 auto 124px;
+
+
+  &__frame {
+    width: 960px;
+    height: 540px;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+  }
+}

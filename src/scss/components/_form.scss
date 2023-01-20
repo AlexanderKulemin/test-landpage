@@ -1,0 +1,50 @@
+.form {
+  height: 160px;
+  background: url("../images/form.png");
+  background-position: center;
+  background-size: cover;
+  direction: rtl;
+
+  &__container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  &__box {
+    color: $blue;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 50px;
+  }
+
+  &__txt {
+    // margin: 1px 0 2px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  &__input {
+    margin-left: 24px;
+    border: 1px solid $blue;
+    border-radius: 40px;
+    height: 53px;
+    padding: 0 16px 0 0;
+    width: 342px;
+  }
+
+  &__btn {
+    border: 1px solid $blue;
+    height: 53px;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 0 66px;
+    background-color: $transparent;
+    color: $blue;
+  }
+}

@@ -1,0 +1,26 @@
+version: 0.2
+
+phases:
+    install:        
+        commands:            
+            - 'touch .npmignore'            
+            - 'git config --global url."https://github.com/".insteadOf git@github.com:'
+            - 'git config --global url."https://".insteadOf git://'
+            - 'npm install --global gulp-cli'
+    pre_build:        
+        commands:            
+            - 'npm install'     
+    build:        
+        commands:            
+            - 'npm run build'
+    post_build:        
+        commands:            
+            - aws s3 sync build/ $S3_BUCKET_PATH --exclude "*media/*" --delete --acl public-read
+            - aws lambda invoke --function-name UpdateContentTypes out --log-type Tail --query 'LogResult' --output text |  base64 -d
+            - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION --paths "/*"
+artifacts:
+    base-directory: build    
+    files:        
+        - '**/*'    
+    discard-paths: yes
+    name: zirtue.com

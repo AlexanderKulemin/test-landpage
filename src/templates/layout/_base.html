@@ -1,0 +1,38 @@
+﻿{% from "templates/components/header.html" import header %} {% from
+"templates/components/footer.html" import footer %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>{% block page_title %}{{ name }}{% endblock %}</title>
+    {% if description != "" %}
+    <meta name="description" content="{{ description }}" />
+    {% endif %} {% if keywords != "" %}
+    {% endif %} {% if social_networks.title != "" and
+    social_networks.description != "" and social_networks.image != "" and
+    social_networks.url != "" -%}
+    {%- endif %}
+
+    <meta name="msapplication-TileColor" content="#ffffff" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    {% block page_header %} {{ header(fixed=true, color='blue55') }} {% endblock
+    %} {% block page_content %} {% endblock %} {% block page_footer %} {{
+    footer() }} {% endblock %}
+    <script src="/js/main.js"></script>
+    
+  </body>
+</html>

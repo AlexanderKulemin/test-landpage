@@ -1,0 +1,9 @@
+﻿node_modules/
+node_modules/*
+build/
+production/
+.idea/
+package-lock.json
+cached/
+src/video/*
+screens/*

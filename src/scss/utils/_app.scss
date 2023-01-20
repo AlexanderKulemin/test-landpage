@@ -1,0 +1,21 @@
+﻿html {
+  //overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	min-width: 320px;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	background-color: $body-color;
+	font-family: 'Assistant', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	font-weight: 400;
+	//overflow-x: hidden;
+}
