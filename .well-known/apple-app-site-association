@@ -1,0 +1,11 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "MV7NK4APNC.com.zirtue.app",
+                "paths": [ "*" ]
+            }
+        ]
+    }
+}

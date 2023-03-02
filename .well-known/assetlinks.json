@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.zirtue.app",
+    "sha256_cert_fingerprints":
+    ["74:57:21:C6:BC:6A:08:49:FC:13:24:E1:B5:5A:7C:98:0D:93:0F:CC:1B:EF:26:EF:E2:72:53:13:77:4C:9A:F2", "FA:C6:17:45:DC:09:03:78:6F:B9:ED:E6:2A:96:2B:39:9F:73:48:F0:BB:6F:89:9B:83:32:66:75:91:03:3B:9C"]
+  }
+}]
