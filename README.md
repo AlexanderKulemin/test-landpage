@@ -2,6 +2,10 @@
 
 ![img.png](img.png)
 
+## Demo
+
+[Demo](https://alexanderkulemin.github.io/test-landpage/)
+
 ## Setup
 
 Download or clone repo.\
